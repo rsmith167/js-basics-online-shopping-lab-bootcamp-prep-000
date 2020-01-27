@@ -29,10 +29,10 @@ function viewCart() {
   for(let i = 0; i < cart.length -1; i++){
     itemAndPrice.push(` ${cart[i].itemName} at $${cart[i].itemPrice},`)
   }
-  //totalMessage.push(beginningMessage)
-  //totalMessage.push(itemAndPrice)
+  totalMessage.push(beginningMessage)
+  totalMessage.push(itemAndPrice)
   itemAndPrice.push(`and ${cart[cart.length -1].itemName} at $${cart[cart.length -1].itemPrice}.`)
-  totalMessage = [totalMessage,...beginningMessage,...itemAndPrice]
+  totalMessage.push(itemAndPrice)
   return totalMessage
   }
 }
