@@ -66,10 +66,10 @@ function placeOrder(cardNumber) {
   
   var totalPrice = total()
   
-  if(!cardNumber){
+  if(){
     console.log("Sorry, we don't have a credit card on file for you.")
-  }else{
+  }if (cardNumber > 0{
     cart = new Array()
     return `Your total cost is $${totalPrice}, which will be charged to the card ${cardNumber}.`
-  }
+  }else 
 }
