@@ -27,11 +27,11 @@ function viewCart() {
    return `${beginningMessage} ${cart[0].itemName} at $${cart[0].itemPrice}.`
   }else {
   for(let i = 0; i < cart.length -1; i++){
-    itemAndPrice.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+    itemAndPrice.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
   }
   itemAndPrice.push(` and ${cart[cart.length -1].itemName} at $${cart[cart.length -1].itemPrice}.`)
   totalMessage.push(itemAndPrice)
-  return `${beginningMessage} ${itemAndPrice}`
+  return `${beginningMessage}${itemAndPrice}`
   
   }
 }
