@@ -18,10 +18,6 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-}
-
-function total() {
-  // write your code here
   var beginningMessage = "In your cart, you have"
   var totalMessage = new Array()
   var itemAndPrice = new Array()
@@ -34,6 +30,11 @@ function total() {
   totalMessage.push(itemAndPrice)
   totalMessage.push(`and ${cart[cart.length -1].itemName} at ${cart[cart.length -1].itemPrice}.`)
   return totalMessage
+}
+
+function total() {
+  // write your code here
+  
 }
 
 function removeFromCart(item) {
