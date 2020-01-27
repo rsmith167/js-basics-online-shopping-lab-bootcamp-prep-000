@@ -24,8 +24,8 @@ function viewCart() {
   if(cart.length < 1){
     return "Your shopping cart is empty."
   }else if(cart.length === 1){
-    
-  }
+   return `${beginningMessage} ${cart[0].itemName} at ${cart[0].itemPrice}.`
+  }else{
   
   for( let i = 0; i < items.length -1; i++){
     
@@ -36,6 +36,7 @@ function viewCart() {
   totalMessage.push(itemAndPrice)
   totalMessage.push(`and ${cart[cart.length -1].itemName} at ${cart[cart.length -1].itemPrice}.`)
   return totalMessage
+  }
 }
 
 function total() {
