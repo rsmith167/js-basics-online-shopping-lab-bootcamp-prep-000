@@ -52,8 +52,8 @@ function removeFromCart(item) {
     if(cart[i].itemName === item){
       indexCheck = i
       cart = cart.splice( i, 1)
-      return cart
     }
+    return cart
   }
   if(indexCheck === -1){
       indexCheck = "That item is not in your cart."
