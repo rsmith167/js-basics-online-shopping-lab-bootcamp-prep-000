@@ -28,9 +28,7 @@ function viewCart() {
   }else{
   
   for( let i = 0; i < items.length -1; i++){
-    
     itemAndPrice.push(` ${cart[i].itemName} at ${cart[i].itemPrice},`)
-    
   }
   totalMessage.push(beginningMessage)
   totalMessage.push(itemAndPrice)
