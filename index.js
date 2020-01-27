@@ -22,6 +22,18 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var beginningMessage = "In your cart, you have"
+  var totalMessage = new Array()
+  var itemAndPrice = new Array()
+  for( let i = 0; i < items.length -1; i++){
+    
+    itemAndPrice.push(` ${cart[i].itemName} at ${cart[i].itemPrice},`)
+    
+  }
+  totalMessage.push(beginningMessage)
+  totalMessage.push(itemAndPrice)
+  totalMessage.push(`and ${cart[cart.length -1].itemName} at ${cart[cart.length])
+  
 }
 
 function removeFromCart(item) {
