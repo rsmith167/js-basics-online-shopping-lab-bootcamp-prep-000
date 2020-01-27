@@ -26,7 +26,7 @@ function viewCart() {
   }else if(cart.length === 1){
    return `${beginningMessage} ${cart[0].itemName} at $${cart[0].itemPrice}.`
   }else {
-  for( let i = 0; i < items.length -1; i++){
+  for(let i = 0; i < cart.length -1; i++){
     itemAndPrice.push(` ${cart[i].itemName} at $${cart[i].itemPrice},`)
   }
   totalMessage.push(beginningMessage)
