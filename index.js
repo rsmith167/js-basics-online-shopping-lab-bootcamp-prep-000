@@ -28,11 +28,11 @@ function viewCart() {
   }else{
   
   for( let i = 0; i < items.length -1; i++){
-    itemAndPrice.push(` ${cart[i].itemName} at ${cart[i].itemPrice},`)
+    itemAndPrice.push(` ${cart[i].itemName} at $${cart[i].itemPrice},`)
   }
   totalMessage.push(beginningMessage)
   totalMessage.push(itemAndPrice)
-  totalMessage.push(`and ${cart[cart.length -1].itemName} at ${cart[cart.length -1].itemPrice}.`)
+  totalMessage.push(`and ${cart[cart.length -1].itemName} at $${cart[cart.length -1].itemPrice}.`)
   return totalMessage
   }
 }
