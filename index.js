@@ -21,6 +21,12 @@ function viewCart() {
   var beginningMessage = "In your cart, you have"
   var totalMessage = new Array()
   var itemAndPrice = new Array()
+  if(cart.length < 1){
+    return "Your shopping cart is empty."
+  }else if(cart.length === 1){
+    
+  }
+  
   for( let i = 0; i < items.length -1; i++){
     
     itemAndPrice.push(` ${cart[i].itemName} at ${cart[i].itemPrice},`)
