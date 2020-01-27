@@ -32,7 +32,7 @@ function viewCart() {
   //totalMessage.push(beginningMessage)
   //totalMessage.push(itemAndPrice)
   itemAndPrice.push(`and ${cart[cart.length -1].itemName} at $${cart[cart.length -1].itemPrice}.`)
-  totalMessage = [...beginningMessage,...itemAndPrice]
+  totalMessage = [totalMessage,...beginningMessage,...itemAndPrice]
   return totalMessage
   }
 }
