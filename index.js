@@ -52,7 +52,7 @@ function removeFromCart(item) {
     if(cart[i].itemName === item){
       indexCheck = i
       cart.splice( i, 1)
-      reutnr cart
+      return cart
     }
     
   }
