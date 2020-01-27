@@ -51,7 +51,7 @@ function removeFromCart(item) {
   for(let i = 0; i < cart.length; i++){
     if(cart[i].itemName === item){
       indexCheck = i
-      cart = cart.splice( Math.max(0, i -1), 1)
+      cart = cart.splice( i, 1)
       return cart
     }
   }
