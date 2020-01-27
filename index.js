@@ -30,10 +30,9 @@ function viewCart() {
     itemAndPrice.push(` ${cart[i].itemName} at $${cart[i].itemPrice},`)
   }
   totalMessage.push(beginningMessage)
-  
   itemAndPrice.push(`and ${cart[cart.length -1].itemName} at $${cart[cart.length -1].itemPrice}.`)
   totalMessage.push(itemAndPrice)
-  return totalMessage
+  return `${totalMessage}`
   }
 }
 
