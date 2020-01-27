@@ -33,7 +33,7 @@ function total() {
   totalMessage.push(beginningMessage)
   totalMessage.push(itemAndPrice)
   totalMessage.push(`and ${cart[cart.length -1].itemName} at ${cart[cart.length -1].itemPrice}.`)
-  
+  return totalMessage
 }
 
 function removeFromCart(item) {
